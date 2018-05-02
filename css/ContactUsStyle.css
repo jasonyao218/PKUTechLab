@@ -1,0 +1,192 @@
+#contact-form {
+    background-color: transparent;;
+    width:100%;
+    padding: 20px;
+    padding-top:10px;
+    margin-top: 0;
+    border: 2px solid #97180b;
+    -moz-border-radius:5px;
+    -webkit-border-radius:5px;
+    border-radius:5px;
+    position:relative;
+    margin-bottom: 0;
+}
+
+#form-me{
+  font-family: 'Montserrat Alternates', sans-serif;
+  font-size:12px;
+  font-weight: 300;
+}
+#contact-form h1 {
+    font-size:16px;
+    font-family: 'Montserrat Alternates', sans-serif;
+    font-weight: bold;
+}
+
+#contact-form h2 {
+    font-size:13px;
+    margin-bottom: 15px;
+    font-family: 'Ubuntu', sans-serif;
+  	font-weight: 400;
+}
+
+.enter-me{
+    display:inline-block;
+    margin-right: 20px;
+    width: 30%;
+
+}
+.enter-me input{
+    height:30px;
+    width:100%;
+    border:1px solid #97180b;
+    border-radius:5px;
+}
+
+.enquiry-me{
+    width:30%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#enquiry{
+    border:1px solid #97180b;
+    width: 100%;
+}
+
+
+#contact-form input:focus,
+#contact-form select:focus,
+#contact-form textarea:focus {
+    border: 2px solid #97180b;
+    border-radius: 5px;
+    outline: none;
+}
+
+#contact-form textarea {
+    height:150px;
+    border: 1px solid #97180b;
+    border-radius: 3px;
+    width:95%;
+    resize: none;
+}
+
+#contact-form label {
+    display:block;
+}
+
+#contact-form .required {
+    font-weight:bold;
+    color:#F00;
+}
+
+
+#contact-form #submit-button {
+    width: 100px;
+    background-color:transparent;
+    border: 2px solid #97180b;
+    border-radius: 3px;
+    color:#97180b;
+    display:block;
+    float:right;
+    margin-bottom:2px;
+    margin-top: 20px;
+    margin-right:5%;
+}
+
+#contact-form #submit-button:hover {
+    border:3px solid #97190b;
+    margin-bottom:1px;
+    margin-top: 19px;
+}
+
+/* Remove box shadow firefox, chrome and opera put around required fields. It looks rubbish. */
+input:required, textarea:required {
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+    -o-box-shadow:none;
+    box-shadow:none;
+}
+
+/* Normalize placeholder styles */
+
+/* chrome, safari */
+::-webkit-input-placeholder {
+    color:#CCC;
+    font-style:italic;
+}
+
+/* mozilla */
+input:-moz-placeholder, textarea:-moz-placeholder {
+    color:#CCC;
+    font-style:italic;
+}
+
+/* ie (faux placeholder) */
+input.placeholder-text, textarea.placeholder-text  {
+    color:#CCC;
+    font-style:italic;
+}
+
+
+#nav-me{
+	background-color: transparent;;
+	min-height: 40px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border:none;
+}
+
+#navbrand{
+	margin:0;
+	padding:0;
+	margin-top:25px;
+	height:25px;
+	color: #97180b;
+	margin-left:14px;
+	font-family: 'Montserrat Alternates', sans-serif;
+}
+
+#nofitication{
+	margin:0;
+	padding:0;
+	margin-right:20px;
+ 	margin-top: 25px;
+	height: 25px;
+	color:#97180b;
+	font-family: 'Montserrat Alternates', sans-serif;
+}
+
+#contents-me{
+	padding-left: 20px;
+  margin-top: 0;
+	border:none;
+	background-color: transparent;
+}
+
+#content-profile{
+	margin-top: 0;
+	position:absolute;
+	width:95%;
+	background-color: transparent;
+	border-radius: 2px;
+	margin-left: 10px;
+}
+
+
+.font-Mont{
+	font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.font-Mont-opacity{
+	font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.font-ub{
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 400;
+}
+body{
+	background: url(../img/img003.jpg);
+		background-size: 800px 267px;
+}

@@ -1,0 +1,84 @@
+#nav-me{
+	background-color: transparent;;
+	min-height: 40px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	border:none;
+}
+
+#navbrand{
+	margin:0;
+	padding:0;
+	margin-top:25px;
+	height:25px;
+	color: #97180b;
+	margin-left:14px;
+	font-family: 'Montserrat Alternates', sans-serif;
+}
+
+#nofitication{
+	margin:0;
+	padding:0;
+	margin-right:20px;
+ 	margin-top: 25px;
+	height: 25px;
+	color:#97180b;
+	font-family: 'Montserrat Alternates', sans-serif;
+}
+
+#contents-me{
+	padding-left: 20px;
+  margin-top: 0;
+	border:none;
+}
+
+#content-profile{
+	margin-top: 0;
+	position:absolute;
+	width:60%;
+	padding-top:20px;
+	background-color: white;
+	border-radius: 5px;
+	margin-left: 10px;
+}
+
+#navigator-profile{
+	position:absolute;
+	left:65%;
+	width:30%;
+	margin-left: 10px;
+	background-color: #edeff0;
+	border-radius: 5px;
+}
+
+#contactButton{
+	color:#ba0000;
+	height:35px;
+	width:170px;
+	margin-top: 20px;
+	margin-left: 0;
+	border-color: #ba0000;
+}
+
+#contactButton:hover{
+	border-width: 2px;
+	background: #ffffff;
+}
+
+.font-Mont{
+	font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.font-Mont-opacity{
+	font-family: 'Montserrat Alternates', sans-serif;
+}
+
+
+.font-ub{
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 400;
+}
+body{
+	background: url(../img/img003.jpg);
+		background-size: 800px 267px;
+}

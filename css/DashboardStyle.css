@@ -1,0 +1,143 @@
+body{
+	background:url(../img/img003.jpg);
+  background-size: 800px 267px;
+}
+
+#nav-me{
+	background-color: transparent;;
+	min-height: 40px;
+	padding-top: 20px;
+	border:none;
+}
+
+#navbrand{
+	margin:0;
+	padding:0;
+	margin-top:25px;
+	height:25px;
+	color: #97180b;
+	margin-left:14px;
+	font-family: 'Montserrat Alternates', sans-serif;
+}
+
+#nofitication{
+	margin:0;
+	padding:0;
+	margin-right:20px;
+ 	margin-top: 25px;
+	height: 25px;
+	color:#97180b;
+	font-family: 'Montserrat Alternates', sans-serif;
+}
+
+#contents-me{
+	padding-left: 20px;
+  margin-top: 0;
+	border:none;
+	background-color: transparent;
+}
+
+#content-profile{
+	margin-top: 0;
+	position:absolute;
+	width:60%;
+	padding-top:20px;
+	background-color: transparent;
+	border-radius: 5px;
+	margin-left: 10px;
+}
+
+
+.font-Mont{
+	font-family: 'Montserrat Alternates', sans-serif;
+}
+
+.font-ub{
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 400;
+}
+
+.infoD-me h5{
+	font-family: 'Montserrat Alternates', sans-serif;
+	font-size: 16px;
+	display: inline-block;
+	margin-right: 115px;
+	padding: 0;
+}
+.infoD-me p{
+	font-family: 'Montserrat Alternates', sans-serif;
+	display: inline-block;
+	margin-left: 0;
+}
+
+.resume-btn{
+	color: white;
+	font-size: 35px;
+	float: right;
+	padding-top: 4px;
+	padding-right: 12px;
+}
+.resume-btn:visited{
+	color: white;
+}
+
+.figure-me{
+	float: left;
+	height:18.8em;
+	margin: 0 0 40px 40px;
+}
+figure {
+    height: 14em;
+    margin: 0;
+    width: 22em;
+    -webkit-transform: perspective(500);
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: .5s;
+}
+figure:hover {
+    -webkit-transform: perspective(500) rotateX(90deg) translateY(-6.5em) translateZ(6.9em);
+}
+img {
+		border-radius: 10px;
+    background-color: #222;
+    box-shadow: 0 20px 15px -10px hsla(0,0%,0%,.75);
+    display: block;
+    height: 100%;
+		width: 100%;
+    -webkit-transition: .5s;
+}
+figure:hover img {
+    box-shadow: none;
+}
+.text-fig{
+	margin-top: -1em;
+	padding-left: 1em;
+	padding-right: 1em;
+}
+.text-fig h5{
+	margin:0;
+	padding: 0;
+	padding-top: 0.7em;
+	margin-bottom: 0.5em;
+	font-size: 18px;
+}
+.text-fig p{
+	font-size: 14px;
+	margin: 0;
+	padding: 0;
+}
+
+figcaption {
+		border-radius: 10px;
+    background-color: #222;
+    color: #fff;
+		height: 14em;
+    padding-top: 1.5em;
+    -webkit-transform: rotateX(-90deg);
+    -webkit-transform-origin: 100% 0;
+    -webkit-transition: .5s;
+}
+
+figure:hover figcaption {
+    box-shadow: 0 20px 15px -10px hsla(0,0%,0%,.25);
+}

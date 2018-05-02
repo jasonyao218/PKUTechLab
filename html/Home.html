@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>PKU Tech Lab</title>
+
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/HomeStyle.css">
+  <link href='https://fonts.googleapis.com/css?family=Montserrat+Alternates' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
+  <script src="https://code.jquery.com/jquery.min.js"></script>
+</head>
+
+<body>
+	<nav class="navbar navbar-default navbar-fixed-top" id = "nav-home">
+	  <div class="container-fluid">
+	    <!-- Brand and toggle get grouped for better mobile display -->
+	    <div class="navbar-header" id="nav-me">
+	      <button type="button" class="navbar-toggle collapsed" id="bt-cl-me" data-toggle="collapse" data-target="#bs-1" aria-expanded="false">
+	        <span class="sr-only">Toggle navigation</span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+	      </button>
+      <div id="brands-combo">
+        <a href="#" id = "header-img">
+          <img alt="Brand" src="../img/PKU.png" height="80px" width="80px">
+        </a>
+	      <a href="#" id = "brand-me">PKU Tech Lab</a>
+      </div>
+	  </div>
+
+	    <!-- Collect the nav links, forms, and other content for toggling -->
+	    <div class="collapse navbar-collapse font-Mont" id="bs-1">
+	      <ul class="nav navbar-nav navbar-right navbar-b-me">
+	        <li><a href="About.html">About</a></li>
+          <li><a href="ContactUs.html">Contact</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#signinModal">Sign In</a></li>
+          <li><a href="#" data-toggle="modal" data-target="#signupModal" value="Register" id = "freetrial">Free Trial</a></li>
+	      </ul>
+	    </div><!-- /.navbar-collapse -->
+	  </div><!-- /.container-fluid -->
+	</nav>
+
+  <div id="signinModal" class="modal fade positionModal" role="dialog">
+    <div class="modal-dialog modal-me">
+    <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title font-Mont-red">Sign in</h4>
+        </div>
+        <form action="">
+          <div class="modal-body">
+              <div>
+                  <input type="text" class="form-control signinBar  font-Mont" name="email" value="" placeholder="Email*" required="required"/>
+                  <input type="password" class="form-control signinBar font-Mont" name="password" value="" placeholder="Password*" required="required"/>
+                  <input type="checkbox" id="check-me"> <p class="font-Mont" style="display:inline-block;">Remember Me</p><br>
+              </div>
+          </div>
+         <div class="modal-footer">
+          <a href="#"><button type="submit" value="Submit" class="btn btn-success font-Mont" id="modalSuccess">Submit</button><a>
+          <a href="#"><button type="button" class="font-Mont" id="modalClose" data-dismiss="modal">Close</button><a>
+         </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div id = "jumbo-me">
+        <div id="text-home"class="font-Mont">
+          <p>Experience, Learn, Create</p>
+          <p>With PKU Tech Lab</p>
+        </div>
+        <div class="panel panel-default panel-me font-Mont">
+          <div class="panel-heading" id="p-h">
+              <p>Get Started Today</p>
+          </div>
+          <div class="panel-body">
+            <form class="freetrial_signup" id = "formSignup1" action="{{ url_for('register') }}" method="POST" role = "form">
+              <div class="signup">
+                  <div id="firstname" class="name-me input-bar">
+                    <input type="text" id="input1" name="i1" value="" data-target="#signupModal" class="form-control" placeholder="First name *">
+                  </div>
+                  <div id="lastname" class="name-me input-bar">
+                    <input type="text" id="input2" data-target="#signupModal" class="form-control" placeholder="Last name *" aria-describedby="basic-addon1">
+                  </div>
+                <div id="email" class="input-bar">
+                  <input type="email" id="input3" data-target="#signupModal" class="form-control" placeholder="Email *" aria-describedby="basic-addon2">
+                </div>
+                <hr style="margin:15px 0 15px 0;">
+                <a data-toggle="modal" data-target="#signupModal" value="Register" id="b-1"><button id="signup-button">Claim your Free Trial </button></a>
+              </div>
+          </form>
+      </div>
+      </div>
+	</div>
+
+  <div id="signupModal" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+    <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" id="modalClose0" data-dismiss="modal">&times;</button>
+          <h4 class="modal-title font-Mont-red">Sign Up A New Account</h4>
+        </div>
+        <form action="">
+          <div class="modal-body font-Mont" id="signupDiv">
+              <div>
+                <label for="fname">First Name: <span class="required">*</span></label>
+                <input type="text" id="signupfname" placeholder="Enter Your First Name" required="required" /><br>
+
+                <label for="lname">First Name: <span class="required">*</span></label>
+                <input type="text"    id="signuplname" placeholder="Enter Your Last Name" required="required" /><br>
+
+                <label for="email">Email: <span class="required">*</span></label>
+                <input type="email"   id="signupemail" placeholder="pkutech@example.com" required="required" /><br>
+
+                <label for="password">Password: <span class="required">*</span></label>
+                <input type="password" placeholder="Create A New Password"  required="required" /><br>
+
+                <label for="password">Re-Enter: <span class="required">*</span></label>
+                <input type="password" placeholder="RE-Type the New Password" required="required"/><br>
+              </div>
+          </div>
+         <div class="modal-footer">
+          <a href="#"><button type="button" class="btn btn-success font-Mont" id="modalSuccess" data-dismiss="modal">Submit</button><a>
+          <a href="#"><button type="button" class="font-Mont" id="modalClose" data-dismiss="modal">Close</button><a>
+         </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    $('#b-1').click(function(){
+        $('#signupfname').val($('#input1').val());
+        $('#signuplname').val($('#input2').val());
+        $('#signupemail').val($('#input3').val());
+    });
+    $(document).keyup(function(e) {
+        var code = e.keyCode || e.which;
+        if (e.keyCode == 27) {
+            $("#modalClose").click();
+            $("#modalClose0").click();
+            window.close();
+        }
+    });
+    $(document).unbind('keydown').bind('keydown', function (event) {
+    var doPrevent = false;
+    if (event.keyCode === 8) {
+        var d = event.srcElement || event.target;
+        if ((d.tagName.toUpperCase() === 'INPUT' &&
+             (
+                 d.type.toUpperCase() === 'TEXT' ||
+                 d.type.toUpperCase() === 'PASSWORD' ||
+                 d.type.toUpperCase() === 'FILE' ||
+                 d.type.toUpperCase() === 'SEARCH' ||
+                 d.type.toUpperCase() === 'EMAIL' ||
+                 d.type.toUpperCase() === 'NUMBER' ||
+                 d.type.toUpperCase() === 'DATE' )
+             ) ||
+             d.tagName.toUpperCase() === 'TEXTAREA') {
+            doPrevent = d.readOnly || d.disabled;
+        }
+        else {
+            doPrevent = true;
+        }
+    }
+
+    if (doPrevent) {
+        event.preventDefault();
+    }
+});
+  </script>
+
+  <script src="https://code.jquery.com/jquery-2.1.4.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</body>
